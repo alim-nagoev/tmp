@@ -10,8 +10,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>title</title>
-	<meta name="author" content="Alim Nagoev(https://github.com/alim-nagoev)">
+	<title>Наутилус</title>
+	<meta name="author" content="Alim Nagoev(https://github.com/developer-nagoev)">
 	<meta name="description" content="description here ">
 	<meta name="keywords" content="keywords,here">
 	<link rel="shortcut icon" href="favicon.png" type="image/vnd.microsoft.icon">
@@ -309,7 +309,9 @@
 		<!-- COMPETENCE -->
 		<section class="competence" id="competence">
 			<div class="competence__inner">
-				<h2 class="head competence__head">Наши компетенции</h2>
+				<div class="container competence__wrap">
+					<h2 class="head competence__head">Наши компетенции</h2>
+				</div>
 				<div class="competence__row">
 					<!-- Swiper -->
 					<div class="swiper-container gallery-thumbs competence-controls">
@@ -1102,15 +1104,16 @@
 
 	<!-- Section footer: -->
 	<footer class="footer" id="footer">
-
-		<span class="footer__copy">&copy; Nautilus 2019</span>
-		<p class="footer__created">
-			<a href="#" class="link">Разработка сайта</a> — Телемарк
-		</p>
+		<div class="footer__inner container">
+			<span class="footer__copy">&copy; Nautilus 2019</span>
+			<p class="footer__created">
+				<a href="#" class="link">Разработка сайта</a> — Телемарк
+			</p>
+		</div>
 	</footer>
 
 	<div class="overlay">
-		<div class="modal">
+		<div class="modal modal--client">
 
 			<button class="modal__exit" aria-label="Закрыть окно">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" class="modal__ico">
@@ -1137,18 +1140,30 @@
 					<input type="text" id="floatField2" data-placeholder="Сообщение">
 				</div>
 
-				<button type="submit" class="btn btn--yellow form__btn call-modal">Стать клиентом</button>
+				<button type="submit" class="btn btn--yellow form__btn">Стать клиентом</button>
 			</form>
-			<p class="conf">
+			<p class="modal__text">
 				Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#"
-					target="_blank" rel="noopener noreferrer" class="conf__link">политикой
+					target="_blank" rel="noopener noreferrer" class="modal__link">политикой
 					конфиденциальности</a>
 			</p>
 		</div>
+		<div class="modal modal--thanks">
+
+			<button class="modal__exit modal__exit--thanks" aria-label="Закрыть окно">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" class="modal__ico">
+					<path d="M20 2.1L17.9 0 10 7.9 2.1 0 0 2.1 7.9 10 0 17.9 2.1 20l7.9-7.9 7.9 7.9 2.1-2.1-7.9-7.9z" />
+				</svg>
+			</button>
+
+			<h2 class="head modal__head line line--dgrey">Благодарим за обращение</h2>
+			<p class="modal__text">Ваша заявка успешно отправлена.
+				Мы свяжемся с вами в ближайшее время</p>
+		</div>
 	</div>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="scripts/swiper.js"></script>
 	<script src="scripts/scrollTo.js"></script>
+	<script src="scripts/swiper.js"></script>
 	<script src="scripts/main.js"></script>
 </body>
 
